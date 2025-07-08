@@ -12,9 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    *{
-      overflow-x: hidden;
-    }
+    
     
     /* image css section start */
 
@@ -357,11 +355,11 @@
 
   <!-- images -->
 
-  <section class="py-16 px-6 sm:px-12 lg:px-24 bg-gray-900 text-gray-100 our-spaces-section">
+  <section class="py-16 px-6 sm:px-12 lg:px-24 bg-gray-900 text-gray-100 ">
     <h2 class="text-3xl font-extrabold mb-10 text-center hover:text-[var(--logo-color)] transition-colors shadow animation-fadeup ">
       Our Spaces & Offering </h2>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-spaces-grid relative">
-      <div data-aos="fade-up" class="relative group overflow-hidden rounded-lg shadow-lg">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-spaces-grid relative myImageSection">
+      <div data-aos="fade-up" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUOI21baEDauYIXQku1sISyrVjiRCVFEQZA&s"
           alt="Zobra Restaurant Main Entrance and Reception Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -372,7 +370,7 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <div data-aos="fade-up" data-aos-delay="100" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoiLNZhtVwKkw3BpNTXXDTv4Z4570tqy2puQ&s"
           alt="Zobra Restaurant Outdoor Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -383,7 +381,7 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="200" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <div data-aos="fade-up" data-aos-delay="200" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLBqlS8qr9mocyyQ9JEYvUa8WGhhnpgJqYg&s"
           alt="Zobra Restaurant Hotel & Spa Building"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -394,7 +392,7 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="300" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <div data-aos="fade-up" data-aos-delay="300" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZpBhZzYvNvgNiEjMj8ZbSJGJH5TynzsE6g&s"
           alt="Zobra Restaurant Outdoor Dining Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -450,11 +448,8 @@
         </div>
       </div>
     </div>
-    <!-- <div class="swiper-pagination our-spaces-pagination mt-50"></div> -->
-    <div class="swiper-button-prev">
-
-    </div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination our-spaces-pagination mt-50"></div>
+    
   </section>
 
 
@@ -705,11 +700,11 @@
 
         <!-- Right Section: Navigation Links -->
         <div class="flex flex-col items-center md:items-start md:w-1/4">
-          <ul class="space-y-4 text-center md:text-left">
-            <li><a href="gallery.html" class="hover:underline text-lg">Gallery</a></li>
-            <li><a href="faq.html" class="hover:underline text-lg">FAQ</a></li>
-            <li><a href="contact.html" class="hover:underline text-lg">Contact</a></li>
-            <li><a href="terms.html" class="hover:underline text-lg">Terms of Stay</a></li>
+          <ul class="space-y-4  item-center gap-3 md:text-left">
+            <li><a href="gallery.html" class="text-lg item-center">Gallery</a></li>
+            <li><a href="faq.html" class=" text-lg">FAQ</a></li>
+            <li><a href="contact.html" class=" text-lg">Contact</a></li>
+            <li><a href="terms.html" class=" text-lg">Terms of Stay</a></li>
           </ul>
         </div>
       </div>
@@ -982,16 +977,14 @@
 </script>
 <!-- images section js -->
 <script>
+      const ourSpacesGrid = document.querySelector('.myImageSection');
+        let ourSpacesSwiper = null;
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const ourSpacesGrid = document.querySelector('.our-spaces-grid');
-    let ourSpacesSwiper = null;
-
-    function initializeSwiper() {
-        if (window.innerWidth < 768 && ourSpacesGrid && !ourSpacesGrid.classList.contains('swiper-initialized')) {
+   function initializeSwiper() {
+    
             ourSpacesGrid.classList.add('swiper', 'our-spaces-swiper', 'swiper-initialized');
 
-            const cards = Array.from(ourSpacesGrid.querySelectorAll('.relative.group.overflow-hidden.rounded-lg.shadow-lg'));
+            const cards = Array.from(ourSpacesGrid.querySelectorAll('.myImageItem'));
 
             const wrapper = document.createElement('div');
             wrapper.classList.add('swiper-wrapper');
@@ -1022,29 +1015,19 @@
                 },
                 loop: true,
                 navigation: {
-                    // Make sure these selectors are specific to your Swiper instance.
-                    // If you have multiple Swipers, consider using something like:
-                    // nextEl: '.our-spaces-section .swiper-button-next',
-                    // prevEl: '.our-spaces-section .swiper-button-prev',
-                    // For now, the generic class should work if CSS is scoped.
+                    
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
             });
-            console.log('Swiper initialized:', ourSpacesSwiper);
+          }
 
-        } else if (window.innerWidth >= 768 && ourSpacesGrid.classList.contains('swiper-initialized')) {
-            // ... (destroy logic) ...
-        }
-    }
-
+    document.addEventListener('DOMContentLoaded', 
+  function () {
+ if(window.innerWidth < 768) {
     initializeSwiper();
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(initializeSwiper, 250);
-    });
-});
+   }
+  });
 </script>
 
 </html>
