@@ -6,22 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zorba Restaurant</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="main.js"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
- 
+  <link href="assets/main.css" rel="stylesheet">
+  <script src="assets/main.js"></script>
+
+
+
 
   <style>
-    
-    
-    /* image css section start
+    /* image css section start */
 
     @media (max-width: 767px) {
-    .our-spaces-section .swiper-button-prev,
-    .our-spaces-section .swiper-button-next {
+
+      .our-spaces-section .swiper-button-prev,
+      .our-spaces-section .swiper-button-next {
         color: #f7d08a;
         width: 30px;
         height: 30px;
@@ -30,39 +32,43 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        top: 1500px; 
-                         
-        transform: translateY(-50%); 
-                      
+
+        top: 1500px;
+
+        transform: translateY(-50%);
+
 
         z-index: 10;
         --swiper-navigation-size: 20px;
-    }
-    .our-spaces-section, .swiper-button-prev, .swiper-button-next{
-      display:block;
-    }
+      }
 
-    .our-spaces-section .swiper-button-prev {
-        left: 10px; 
-      
-    }
+      .our-spaces-section,
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: block;
+      }
 
-    .our-spaces-section .swiper-button-next {
+      .our-spaces-section .swiper-button-prev {
+        left: 10px;
+
+      }
+
+      .our-spaces-section .swiper-button-next {
         right: 10px;
-       
-    }
 
-   
-    .our-spaces-section .swiper-button-prev.swiper-button-disabled,
-    .our-spaces-section .swiper-button-next.swiper-button-disabled {
+      }
+
+
+      .our-spaces-section .swiper-button-prev.swiper-button-disabled,
+      .our-spaces-section .swiper-button-next.swiper-button-disabled {
         opacity: 0.3;
         cursor: auto;
         pointer-events: none;
+      }
     }
-}
+
     /* image css section end */
-    
+
     /* testimonial css start */
     .swiper-button-prev,
     .swiper-button-next {
@@ -162,11 +168,11 @@
       width: 100%;
       background-color: rgb(233, 229, 229);
 
-      
+
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-   
+
       padding-bottom: 1rem;
-     
+
     }
 
 
@@ -175,36 +181,36 @@
       .mobile-menu-collapsed,
       .mobile-menu-expanded {
         display: flex !important;
-        
+
         position: static;
-       
+
         background-color: transparent;
-       
+
         box-shadow: none;
-       
+
         padding: 0;
-      
+
         flex-direction: row;
-      
+
         justify-content: space-between;
-       
+
       }
 
-     
+
       #mobile-menu-button {
         display: none !important;
       }
     }
 
-   
+
     .mobile-menu-expanded ul li {
       width: 100%;
-    
+
     }
 
     .mobile-menu-expanded ul li a {
       padding: 0.75rem 1.5rem;
-     
+
     }
 
 
@@ -212,7 +218,7 @@
 
     :root {
       --logo-color: #ff0000;
-    } */
+    }
   </style>
 
 </head>
@@ -224,7 +230,7 @@
 
     <nav aria-label="Primary navigation" class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-20">
 
-     
+
       <a href="zobra.html" tabindex="0" aria-label="Zobra Restaurant Home" class="flex items-center">
         <img
           src="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=o9l-ERwWN5YQ7kNvwFXZ4nx&_nc_oc=AdmTvwiq2Iw_ZnmOorByHv3I_1ECGFrc-C3oo3ayVX4u_BB5v2asxZtH3ByDARHvUkk&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=ucyalY0Tkeyw5y7Bk4RC6g&oh=00_AfNI0FROsVWyEfTfiftgD2vVz-ReSuTP-2Vjz_Ep_3EEKQ&oe=686ACD8B"
@@ -355,9 +361,11 @@
   <!-- images -->
 
   <section class="py-16 px-6 sm:px-12 lg:px-24 bg-gray-900 text-gray-100 ">
-    <h2 class="text-3xl font-extrabold mb-10 text-center hover:text-[var(--logo-color)] transition-colors shadow animation-fadeup ">
+    <h2
+      class="text-3xl font-extrabold mb-10 text-center hover:text-[var(--logo-color)] transition-colors shadow animation-fadeup ">
       Our Spaces & Offering </h2>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-spaces-grid relative myImageSection">
+    <div
+      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-spaces-grid relative myImageSection">
       <div data-aos="fade-up" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUOI21baEDauYIXQku1sISyrVjiRCVFEQZA&s"
           alt="Zobra Restaurant Main Entrance and Reception Area"
@@ -369,7 +377,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="100"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoiLNZhtVwKkw3BpNTXXDTv4Z4570tqy2puQ&s"
           alt="Zobra Restaurant Outdoor Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -380,7 +389,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="200" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="200"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLBqlS8qr9mocyyQ9JEYvUa8WGhhnpgJqYg&s"
           alt="Zobra Restaurant Hotel & Spa Building"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -391,7 +401,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="300" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="300"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZpBhZzYvNvgNiEjMj8ZbSJGJH5TynzsE6g&s"
           alt="Zobra Restaurant Outdoor Dining Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -402,7 +413,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="400" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="400"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/313/313109/sauna-helps-relax.jpg"
           alt="Zobra Restaurant Sauna"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -413,7 +425,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="500" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="500"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFj8fmZB7uY5EdejnbKZO3q_HbnmVr8XPb6Q&s"
           alt="Zobra Restaurant Indoor Dining Area"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -424,7 +437,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="600" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="600"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/b9/06/49/photo0jpg.jpg?w=900&h=-1&s=1"
           alt="Zobra Restaurant Food and Drinks"
           class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -435,7 +449,8 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="700" class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
+      <div data-aos="fade-up" data-aos-delay="700"
+        class="relative group overflow-hidden rounded-lg shadow-lg myImageItem">
         <img
           src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/57/97/ed/enjoy-every-moment-here.jpg?w=1400&h=-1&s=1"
           alt="Zobra Restaurant Bakery"
@@ -448,7 +463,7 @@
       </div>
     </div>
     <div class="swiper-pagination our-spaces-pagination mt-50"></div>
-    
+
   </section>
 
 
@@ -976,57 +991,57 @@
 </script>
 <!-- images section js -->
 <script>
-      const ourSpacesGrid = document.querySelector('.myImageSection');
-        let ourSpacesSwiper = null;
+  const ourSpacesGrid = document.querySelector('.myImageSection');
+  let ourSpacesSwiper = null;
 
-   function initializeSwiper() {
-    
-            ourSpacesGrid.classList.add('swiper', 'our-spaces-swiper', 'swiper-initialized');
+  function initializeSwiper() {
 
-            const cards = Array.from(ourSpacesGrid.querySelectorAll('.myImageItem'));
+    ourSpacesGrid.classList.add('swiper', 'our-spaces-swiper', 'swiper-initialized');
 
-            const wrapper = document.createElement('div');
-            wrapper.classList.add('swiper-wrapper');
+    const cards = Array.from(ourSpacesGrid.querySelectorAll('.myImageItem'));
 
-            cards.forEach(card => {
-                const slide = document.createElement('div');
-                slide.classList.add('swiper-slide');
-                slide.appendChild(card);
-                wrapper.appendChild(slide);
-            });
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('swiper-wrapper');
 
-            while (ourSpacesGrid.firstChild) {
-                ourSpacesGrid.removeChild(ourSpacesGrid.firstChild);
-            }
-            ourSpacesGrid.appendChild(wrapper);
+    cards.forEach(card => {
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      slide.appendChild(card);
+      wrapper.appendChild(slide);
+    });
 
-            const paginationEl = document.querySelector('.our-spaces-pagination');
-            if (paginationEl && !ourSpacesGrid.contains(paginationEl)) {
-                 ourSpacesGrid.parentElement.appendChild(paginationEl);
-            }
+    while (ourSpacesGrid.firstChild) {
+      ourSpacesGrid.removeChild(ourSpacesGrid.firstChild);
+    }
+    ourSpacesGrid.appendChild(wrapper);
 
-            ourSpacesSwiper = new Swiper('.our-spaces-swiper', {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                pagination: {
-                    el: '.our-spaces-pagination',
-                    clickable: true,
-                },
-                loop: true,
-                navigation: {
-                    
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-          }
+    const paginationEl = document.querySelector('.our-spaces-pagination');
+    if (paginationEl && !ourSpacesGrid.contains(paginationEl)) {
+      ourSpacesGrid.parentElement.appendChild(paginationEl);
+    }
 
-    document.addEventListener('DOMContentLoaded', 
-  function () {
- if(window.innerWidth < 768) {
-    initializeSwiper();
-   }
-  });
+    ourSpacesSwiper = new Swiper('.our-spaces-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.our-spaces-pagination',
+        clickable: true,
+      },
+      loop: true,
+      navigation: {
+
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded',
+    function () {
+      if (window.innerWidth < 768) {
+        initializeSwiper();
+      }
+    });
 </script>
 
 </html>
