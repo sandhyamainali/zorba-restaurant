@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zorba Restaurant</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
 
   <style>
     
@@ -27,7 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* Vertical positioning: Reset to standard centering, then fine-tune */
+        
         top: 1500px; 
                          
         transform: translateY(-50%); 
@@ -46,11 +48,11 @@
     }
 
     .our-spaces-section .swiper-button-next {
-        right: 10px; /* Adjust as needed */
+        right: 10px;
        
     }
 
-    /* Optional: Style for when buttons are disabled (e.g., at start/end if loop is false) */
+   
     .our-spaces-section .swiper-button-prev.swiper-button-disabled,
     .our-spaces-section .swiper-button-next.swiper-button-disabled {
         opacity: 0.3;
@@ -159,11 +161,11 @@
       width: 100%;
       background-color: rgb(233, 229, 229);
 
-      /* Ensures a black background for the dropdown */
+      
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      /* Optional: subtle shadow */
+   
       padding-bottom: 1rem;
-      /* Some padding at the bottom */
+     
     }
 
 
@@ -172,40 +174,36 @@
       .mobile-menu-collapsed,
       .mobile-menu-expanded {
         display: flex !important;
-        /* Force display flex on desktop */
+        
         position: static;
-        /* Remove absolute positioning */
+       
         background-color: transparent;
-        /* Remove background color */
+       
         box-shadow: none;
-        /* Remove shadow */
+       
         padding: 0;
-        /* Remove padding */
+      
         flex-direction: row;
-        /* Set to row direction */
+      
         justify-content: space-between;
-        /* align-items: betweeen; */
-        /* Align items for horizontal menu */
+       
       }
 
-      /* Ensure the mobile hamburger button is hidden on desktop */
+     
       #mobile-menu-button {
         display: none !important;
       }
     }
 
-    /* Styling for links within the expanded mobile menu */
+   
     .mobile-menu-expanded ul li {
       width: 100%;
-      /* Make list items take full width */
-
-      /* text-align: center; */
-      /* Center the text for better appearance */
+    
     }
 
     .mobile-menu-expanded ul li a {
       padding: 0.75rem 1.5rem;
-      /* Adjust padding for mobile links */
+     
     }
 
 
