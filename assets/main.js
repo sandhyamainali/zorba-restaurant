@@ -10,7 +10,7 @@ module.exports = {
 module.exports = {
   content: [
     './*.html', // Looks for HTML files in the root
-    './src/**/*.{html,js,jsx}', // Adjust based on your project structure
+    './src/**/*.{html,js,}', // Adjust based on your project structure
   ],
   theme: {
     extend: {},
