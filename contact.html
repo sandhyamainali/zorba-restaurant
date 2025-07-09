@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Zobra Restaurant</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="assets/main.css" rel="stylesheet">
-<script src="assets/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Zobra Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/main.css" rel="stylesheet">
+  <script src="assets/main.js"></script>
 
 
-    <style>
-        /* navbar css */
+  <style>
+    /* navbar css */
 
 
-    
 
-   
+
+
     .mobile-menu-collapsed {
       display: none !important;
-      
+
     }
 
 
     .mobile-menu-expanded {
       display: flex !important;
-     
+
       flex-direction: column;
-     
+
       position: absolute;
-     
+
       top: 100%;
-     
+
       left: 0;
       width: 100%;
       background-color: rgb(233, 229, 229);
-     
+
       /* Ensures a black background for the dropdown */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       /* Optional: subtle shadow */
@@ -47,7 +47,7 @@
       /* Some padding at the bottom */
     }
 
-   
+
     @media (min-width: 768px) {
 
       .mobile-menu-collapsed,
@@ -87,24 +87,22 @@
       /* Adjust padding for mobile links */
     }
 
-    
-        :root {
-            --logo-color: #ff0000;
-        }
-    </style>
+
+    :root {
+      --logo-color: #ff0000;
+    }
+  </style>
 </head>
 
 <body class="font-inter text-gray-800 bg-gray-50">
 
-    <header class="fixed top-0 left-0 w-full z-50 text-xl bg-black" id="navbar">
+  <header class="fixed top-0 left-0 w-full z-50 text-xl bg-black" id="navbar">
     <!-- THIS IS THE LINE THAT WAS CHANGED (justify-center -> justify-between) -->
     <nav aria-label="Primary navigation" class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-20">
-      
+
       <!-- Item 1: Logo -->
-      <a href="zobra.html" tabindex="0" aria-label="Zobra Restaurant Home" class="flex items-center">
-        <img
-          src="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=o9l-ERwWN5YQ7kNvwFXZ4nx&_nc_oc=AdmTvwiq2Iw_ZnmOorByHv3I_1ECGFrc-C3oo3ayVX4u_BB5v2asxZtH3ByDARHvUkk&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=ucyalY0Tkeyw5y7Bk4RC6g&oh=00_AfNI0FROsVWyEfTfiftgD2vVz-ReSuTP-2Vjz_Ep_3EEKQ&oe=686ACD8B"
-          alt="Zobra Restaurant Logo" class="h-20 w-20 rounded-lg shadow-lg" />
+      <a href="index.html" tabindex="0" aria-label="Zobra Restaurant Home" class="flex items-center">
+        <img src="img/logo.jpg" alt="Zobra Restaurant Logo" class="h-20 w-20 rounded-lg shadow-lg" />
       </a>
 
       <!-- Item 2: Hamburger Button (only visible on mobile) -->
@@ -119,7 +117,7 @@
         class="hidden md:flex md:space-x-8 font-semibold absolute md:static top-full left-0 w-full md:w-auto bg-black md:bg-transparent py-4 md:py-0 mobile-menu-collapsed">
         <ul class="flex flex-col md:flex-row md:space-x-8 items-center md:items-stretch w-full md:w-auto">
           <li>
-            <a href="zobra.html" aria-current="page" tabindex="0"
+            <a href="index.html" aria-current="page" tabindex="0"
               class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
               Home
             </a>
@@ -151,139 +149,136 @@
         </ul>
       </div>
     </nav>
-</header>
+  </header>
 
-    <main class="pt-24">
-        <section class="relative bg-cover bg-center h-64 flex items-center justify-center text-white "
-            style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/8c/d7/best-place-to-eat-with.jpg?w=1800&h=1000&s=1'); background-color: rgba(0,0,0,0.5); background-blend-mode: multiply;"
-            aria-label="Contact Zobra Restaurant">
-            <div class="text-center z-10">
-                <span
-                    class="text-sm  text-[var(--logo-color)] font-semibold uppercase tracking-wider text-logo-color mb-2 inline-block"
-                    aria-hidden="true"> GET IN TOUCH </span>
-                <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up" data-aos-delay="100">Contact</h1>
-                <nav aria-label="Breadcrumb" class="text-sm">
-                    <ol class="flex justify-center space-x-2">
-                        <li><a href="zobra.html" class="hover:text-logo-color transition-colors">HOME</a></li>
-                        <li aria-hidden="true">/</li>
-                        <li aria-current="page" class="text-logo-color">CONTACT</li>
-                    </ol>
-                </nav>
-            </div>
+  <main class="pt-24">
+    <section class="relative bg-cover bg-center h-64 flex items-center justify-center text-white "
+      style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/8c/d7/best-place-to-eat-with.jpg?w=1800&h=1000&s=1'); background-color: rgba(0,0,0,0.5); background-blend-mode: multiply;"
+      aria-label="Contact Zobra Restaurant">
+      <div class="text-center z-10">
+        <span
+          class="text-sm  text-[var(--logo-color)] font-semibold uppercase tracking-wider text-logo-color mb-2 inline-block"
+          aria-hidden="true"> GET IN TOUCH </span>
+        <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up" data-aos-delay="100">Contact</h1>
+        <nav aria-label="Breadcrumb" class="text-sm">
+          <ol class="flex justify-center space-x-2">
+            <li><a href="index.html" class="hover:text-logo-color transition-colors">HOME</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" class="text-logo-color">CONTACT</li>
+          </ol>
+        </nav>
+      </div>
 
-        </section>
+    </section>
 
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white text-center">
-            <span class="text-sm font-semibold uppercase tracking-wider text-[var(--logo-color)] mb-2 inline-block"
-                aria-hidden="true"> CONTACT US </span>
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch With Us</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                We would love to hear from you. Contact us for any queries or for booking your pleasant stay at the
-                restaurant.
-            </p>
-        </section>
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white text-center">
+      <span class="text-sm font-semibold uppercase tracking-wider text-[var(--logo-color)] mb-2 inline-block"
+        aria-hidden="true"> CONTACT US </span>
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch With Us</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        We would love to hear from you. Contact us for any queries or for booking your pleasant stay at the
+        restaurant.
+      </p>
+    </section>
 
-        <section class=" gap-8 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div class="map-container rounded-lg shadow-xl overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.854045353846!2d85.25306657444589!3d27.72251332468305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1f81d11a6813%3A0x633534b1d61c7759!2sNagarjun%20Hills!5e0!3m2!1sen!2snp!4v1719999052968!5m2!1sen!2snp"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-        <section>
+    <section class=" gap-8 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="map-container rounded-lg shadow-xl overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.854045353846!2d85.25306657444589!3d27.72251332468305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1f81d11a6813%3A0x633534b1d61c7759!2sNagarjun%20Hills!5e0!3m2!1sen!2snp!4v1719999052968!5m2!1sen!2snp"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
-                            fill="currentColor">
-                            <path
-                                d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM11 10V7H13V10H16V12H13V15H11V12H8V10H11Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Address</h3>
-                    <p class="text-gray-600">Nagarjun Hills, Kathmandu</p>
-                </article>
-                <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
-                            fill="currentColor">
-                            <path
-                                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Email</h3>
-                    <p><a href="mailto:info@zobrarestaurant.com"
-                            class="text-blue-600 hover:underline">info@zorbarestaurant.com</a></p>
-                </article>
-                <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
-                            fill="currentColor">
-                            <path
-                                d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Mobile</h3>
-                    <p><a href="tel:+97715112047" class="text-blue-600 hover:underline">+977 1-5112047</a></p>
-                </article>
-            </div>
-        </section>
-        <!-- form  section-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
+          data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+              <path
+                d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM11 10V7H13V10H16V12H13V15H11V12H8V10H11Z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">Address</h3>
+          <p class="text-gray-600">Nagarjun Hills, Kathmandu</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+              <path
+                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">Email</h3>
+          <p><a href="mailto:info@zobrarestaurant.com"
+              class="text-blue-600 hover:underline">info@zorbarestaurant.com</a></p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center"
+          data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 rounded-full bg-logo-color bg-opacity-20 text-logo-color mb-4" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+              <path
+                d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">Mobile</h3>
+          <p><a href="tel:+97715112047" class="text-blue-600 hover:underline">+977 1-5112047</a></p>
+        </article>
+      </div>
+    </section>
+    <!-- form  section-->
 
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto bg-white rounded-lg shadow-xl mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Send a Message</h2>
-            <form class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="relative" data-aos="fade-right" data-aos-delay="100">
-                        <input type="text" id="your-name" name="your-name" placeholder="Your Name" required
-                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer">
-                        <label for="your-name" class="sr-only">Your Name</label>
-                    </div>
-                    <div class="relative" data-aos="fade-left" data-aos-delay="200">
-                        <input type="email" id="email-address" name="email-address" placeholder="Email Address" required
-                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer">
-                        <label for="email-address" class="sr-only">Email Address</label>
-                    </div>
-                </div>
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto bg-white rounded-lg shadow-xl mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Send a Message</h2>
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="relative" data-aos="fade-right" data-aos-delay="100">
+            <input type="text" id="your-name" name="your-name" placeholder="Your Name" required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer">
+            <label for="your-name" class="sr-only">Your Name</label>
+          </div>
+          <div class="relative" data-aos="fade-left" data-aos-delay="200">
+            <input type="email" id="email-address" name="email-address" placeholder="Email Address" required
+              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer">
+            <label for="email-address" class="sr-only">Email Address</label>
+          </div>
+        </div>
 
-                <div class="relative" data-aos="fade-up" data-aos-delay="300">
-                    <textarea id="message" name="message" rows="6" placeholder="Message" required
-                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer"></textarea>
-                    <label for="message" class="sr-only">Message</label>
-                </div>
+        <div class="relative" data-aos="fade-up" data-aos-delay="300">
+          <textarea id="message" name="message" rows="6" placeholder="Message" required
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-logo-color focus:border-transparent transition duration-200 peer"></textarea>
+          <label for="message" class="sr-only">Message</label>
+        </div>
 
-                <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
-                    <button type="submit"
-                        class="bg-logo-color text-[var(--logo-color)] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all duration-300 ease-in-out transform hover:scale-105">
-                        <span>» Send Message</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-    </main>
+        <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
+          <button type="submit"
+            class="bg-logo-color text-[var(--logo-color)] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <span>» Send Message</span>
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
 
-    <!-- footer section -->
-    <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
+  <!-- footer section -->
+  <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
     <div class="container mx-auto">
       <!-- Top Section of the Footer: Logo, Contact Info, Navigation Links -->
       <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8 mb-3">
 
-       
+
         <div class="flex flex-col items-center md:items-start md:w-1/4">
-          
+
           <div class=" p-4 rounded-lg shadow-lg mb-2 flex items-center justify-center">
-          
-            <a href="zobra.html" title="Zorba Restaurant" aria-label="Zobra Restaurant logo" class="inline-block mb-3">
+
+            <a href="index.html" title="Zorba Restaurant" aria-label="Zobra Restaurant logo" class="inline-block mb-3">
               <img
-                src="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=o9l-ERwWN5YQ7kNvwFXZ4nx&_nc_oc=AdmTvwiq2Iw_ZnmOorByHv3I_1ECGFrc-C3oo3ayVX4u_BB5v2asxZtH3ByDARHvUkk&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=ucyalY0Tkeyw5y7Bk4RC6g&oh=00_AfNI0FROsVWyEfTfiftgD2vVz-ReSuTP-2Vjz_Ep_3EEKQ&oe=686ACD8B"
+                src="img/logo.jpg"
                 alt="Zobra Restaurant Logo" class="h-30 w-65 rounded justify-center  shadow-md" />
 
             </a>
@@ -320,7 +315,7 @@
             </li>
             <li class="flex items-center gap-3">
               <i class="fas fa-file-alt text-xl"></i>
-             <a href="terms.html"><span>Term of stay</span></a> 
+              <a href="terms.html"><span>Term of stay</span></a>
             </li>
           </ul>
         </div>
@@ -405,33 +400,33 @@
     </div>
   </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!-- navbar script start-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- navbar script start-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
 
-    // Ensure both elements are found before adding the event listener
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function () {
-        // Toggle the classes responsible for showing/hiding the menu in CSS
-        mobileMenu.classList.toggle('mobile-menu-expanded');
-        mobileMenu.classList.toggle('mobile-menu-collapsed');
-      });
-    } else {
-      console.error("Error: Mobile menu button or menu element not found. Check IDs in HTML.");
-    }
-  });
-</script>
-<!-- navbar script end -->
-    <script>
-        AOS.init({
-            duration: 800, 
-            easing: 'ease-out',
-            once: true,    
+      // Ensure both elements are found before adding the event listener
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function () {
+          // Toggle the classes responsible for showing/hiding the menu in CSS
+          mobileMenu.classList.toggle('mobile-menu-expanded');
+          mobileMenu.classList.toggle('mobile-menu-collapsed');
         });
-    </script>
+      } else {
+        console.error("Error: Mobile menu button or menu element not found. Check IDs in HTML.");
+      }
+    });
+  </script>
+  <!-- navbar script end -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true,
+    });
+  </script>
 
 </body>
 
