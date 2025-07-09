@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "zorba restaurant website",
   "private": true,
-  "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
+  
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
