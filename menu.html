@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu - Zobra Restaurant</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="assets/main.css" rel="stylesheet">
-<script src="assets/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu - Zobra Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/main.css" rel="stylesheet">
 
-<meta name="description" content="Zorba the Buddha Restaurant offers vegetarian and vegan meals in the serene Nagarjun Hills, with meditation, bird watching, and peaceful nature views.">
-  <meta name="keywords" content="Zorba the Buddha, vegetarian restaurant Kathmandu, Nagarjun Hills, Osho Tapoban, vegan food Nepal, meditation restaurant, peaceful dining">
+
+  <meta name="description"
+    content="Zorba the Buddha Restaurant offers vegetarian and vegan meals in the serene Nagarjun Hills, with meditation, bird watching, and peaceful nature views.">
+  <meta name="keywords"
+    content="Zorba the Buddha, vegetarian restaurant Kathmandu, Nagarjun Hills, Osho Tapoban, vegan food Nepal, meditation restaurant, peaceful dining">
   <meta name="robots" content="index, follow">
-  
+
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="zorba restaurant">
   <meta property="og:title" content="Zorba the Buddha Restaurant">
-  <meta property="og:description" content="Vegetarian paradise in Nagarjun Hills offering peace, meditation, and mouth-watering vegetarian food.">
-  <meta property="og:image" content="img/logo.png"> <!-- Replace with actual image URL -->
+  <meta property="og:description"
+    content="Vegetarian paradise in Nagarjun Hills offering peace, meditation, and mouth-watering vegetarian food.">
+  <meta property="og:image"
+    content="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2Zbrx8Brk8IQ7kNvwFKqsCe&_nc_oc=Adl0YZXEc5wWClUiacFUWT7H2vwwM-21VY1E40l02sv0g5OxIs5dESqPBlFAZ83NgGU&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=inWoqKeSbY3ZGZtxIFI2yQ&oh=00_AfSp1_qDrxQh_AnG8LXuqDNusXyvt8qUnd6_AS4Ob3DWXg&oe=6875214B">
+  <!-- Replace with actual image URL -->
   <meta property="og:url" content="https://zorbarestaurant.com">
 
   <!-- Twitter -->
@@ -29,14 +35,14 @@
   <meta name="twitter:description" content="Vegetarian and vegan meals with a view, nestled in Nagarjun Hills. A perfect retreat for peace lovers.">
   <meta name="twitter:image" content="https://yourwebsite.com/images/zorba-preview.jpg"> -->
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Zorba the Buddha Restaurant",
-  "image": "https://zorbarestro.com/images/zorba-preview.jpg",
-  "@id": "https://zorbarestro.com",
-  "url": "https://zorbarestro.com",
+  "image": "https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2Zbrx8Brk8IQ7kNvwFKqsCe&_nc_oc=Adl0YZXEc5wWClUiacFUWT7H2vwwM-21VY1E40l02sv0g5OxIs5dESqPBlFAZ83NgGU&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=inWoqKeSbY3ZGZtxIFI2yQ&oh=00_AfSp1_qDrxQh_AnG8LXuqDNusXyvt8qUnd6_AS4Ob3DWXg&oe=6875214B",
+  "@id": "https://zorba-restaurant.vercel.app/",
+  "url": "https://zorba-restaurant.vercel.app/",
   "telephone": "+977-1234567890",
   "priceRange": "$",
   "servesCuisine": ["Vegetarian", "Vegan", "Nepali"],
@@ -76,32 +82,32 @@
   "description": "Zorba the Buddha Restaurant is a peaceful vegetarian dining retreat in Nagarjun Hills, Kathmandu. Known for Osho Tapoban meditation, bird watching, and healthy vegan/vegetarian meals in a serene natural setting."
 }
 </script>
-    <style>
-        /* navbar css */
+  <style>
+    /* navbar css */
 
 
-    
 
-   
+
+
     .mobile-menu-collapsed {
       display: none !important;
-      
+
     }
 
 
     .mobile-menu-expanded {
       display: flex !important;
-     
+
       flex-direction: column;
-     
+
       position: absolute;
-     
+
       top: 100%;
-     
+
       left: 0;
       width: 100%;
       background-color: rgb(233, 229, 229);
-     
+
       /* Ensures a black background for the dropdown */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       /* Optional: subtle shadow */
@@ -109,7 +115,7 @@
       /* Some padding at the bottom */
     }
 
-   
+
     @media (min-width: 768px) {
 
       .mobile-menu-collapsed,
@@ -149,19 +155,19 @@
       /* Adjust padding for mobile links */
     }
 
-    
-        :root {
-            --logo-color: #ff0000;
-        }
-    </style>
+
+    :root {
+      --logo-color: #ff0000;
+    }
+  </style>
 </head>
 
 <body class="font-sans text-gray-800">
 
-    <header class="fixed top-0 left-0 w-full z-50 text-xl" id="navbar">
+  <header class="fixed top-0 left-0 w-full z-50 text-xl" id="navbar">
     <!-- THIS IS THE LINE THAT WAS CHANGED (justify-center -> justify-between) -->
     <nav aria-label="Primary navigation" class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-20">
-      
+
       <!-- Item 1: Logo -->
       <a href="index.html" tabindex="0" aria-label="Zobra Restaurant Home" class="flex items-center">
         <img src="img/logo.jpg" alt="Zobra Restaurant Logo" class="h-20 w-20 rounded-lg shadow-lg" />
@@ -185,7 +191,7 @@
             </a>
           </li>
           <li>
-            <a href="about.html"  rel="noopener noreferrer" tabindex="0"
+            <a href="about.html" rel="noopener noreferrer" tabindex="0"
               class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
               About
             </a>
@@ -203,6 +209,12 @@
             </a>
           </li>
           <li>
+            <a href="gallery.html" tabindex="0"
+              class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
+              Gallery
+            </a>
+          </li>
+          <li>
             <a href="contact.html" tabindex="0"
               class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
               Contact
@@ -211,225 +223,223 @@
         </ul>
       </div>
     </nav>
-</header>
+  </header>
 
-    <main>
-        <section class="relative h-96 flex items-center justify-center text-white bg-cover bg-center"
-            style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-            <div class="absolute inset-0 bg-black opacity-60"></div>
-            <div class="relative z-10 text-center pt-16" aria-label="Our Delicious Menu">
-                <span class="text-xl font-semibold mb-2 block" aria-hidden="true"> EXPLORE </span>
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight" data-aos="fade-up" data-aos-delay="100">Our
-                    Menu</h1>
-                <nav aria-label="Breadcrumb" class="mt-4 text-sm">
-                    <ol class="flex justify-center space-x-2">
-                        <li><a href="index.html" class="hover:underline">HOME</a></li>
-                        <li aria-current="page" class="text-logo-color">/ MENU</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="absolute bottom-0 left-0 w-full" aria-hidden="true">
-                <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="w-full h-auto">
-                    <path fill="#f4b24a" d="M0,40 C480,80 960,0 1440,40 L1440,80 L0,80 Z"></path>
-                </svg>
-            </div>
-        </section>
+  <main>
+    <section class="relative h-96 flex items-center justify-center text-white bg-cover bg-center"
+      style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+      <div class="relative z-10 text-center pt-16" aria-label="Our Delicious Menu">
+        <span class="text-xl font-semibold mb-2 block" aria-hidden="true"> EXPLORE </span>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight" data-aos="fade-up" data-aos-delay="100">Our
+          Menu</h1>
+        <nav aria-label="Breadcrumb" class="mt-4 text-sm">
+          <ol class="flex justify-center space-x-2">
+            <li><a href="index.html" class="hover:underline">HOME</a></li>
+            <li aria-current="page" class="text-logo-color">/ MENU</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="absolute bottom-0 left-0 w-full" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-auto">
+          <path fill="#f4b24a" d="M0,40 C480,80 960,0 1440,40 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+    </section>
 
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Taste Our Authentic Flavors</h2>
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Taste Our Authentic Flavors</h2>
 
-                <div class="mb-16" id="appetizers">
-                    <h3 class="text-3xl font-bold text-[var(--logo-color)] mb-8" data-aos="fade-right">Appetizers</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="100">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqgwx8FKm_8knusNxB0Sg47E3Dr_scFe1TQ&s"
-                                alt="Crispy Spring Rolls" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Italian-Mexican Food Fusion</h4>
-                                <p class="text-gray-600 mb-4 text-sm">The cultural combination of Mexican and Italian
-                                    cuisines makes a lot of sense.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$20.50</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGyaM4KOL_t5plHULCfJosab3iT3dYr04Cw&s"
-                                alt="Vegetable Samosa" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Authentic Mexican Food</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Everybody loves Mexican food because of its savory
-                                    flavor and rich cultural history</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$27.00</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="300">
-                            <img src="https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/hjrizxop/e371a18f-1a34-426e-9466-cc971a00d43f.jpeg"
-                                alt="Paneer Tikka" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Offsite Catering</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Mexican food stations or full Taco Trucks, we have
-                                    highly experienced and qualified staff which will ensure the smooth planning and
-                                    execution of your event.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$150.00</span> -->
-                            </div>
-                        </article>
-                    </div>
-                </div>
+        <div class="mb-16" id="appetizers">
+          <h3 class="text-3xl font-bold text-[var(--logo-color)] mb-8" data-aos="fade-right">Appetizers</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqgwx8FKm_8knusNxB0Sg47E3Dr_scFe1TQ&s"
+                alt="Crispy Spring Rolls" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Italian-Mexican Food Fusion</h4>
+                <p class="text-gray-600 mb-4 text-sm">The cultural combination of Mexican and Italian
+                  cuisines makes a lot of sense.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$20.50</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="200">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGyaM4KOL_t5plHULCfJosab3iT3dYr04Cw&s"
+                alt="Vegetable Samosa" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Authentic Mexican Food</h4>
+                <p class="text-gray-600 mb-4 text-sm">Everybody loves Mexican food because of its savory
+                  flavor and rich cultural history</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$27.00</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/hjrizxop/e371a18f-1a34-426e-9466-cc971a00d43f.jpeg"
+                alt="Paneer Tikka" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Offsite Catering</h4>
+                <p class="text-gray-600 mb-4 text-sm">Mexican food stations or full Taco Trucks, we have
+                  highly experienced and qualified staff which will ensure the smooth planning and
+                  execution of your event.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$150.00</span> -->
+              </div>
+            </article>
+          </div>
+        </div>
 
-                <div class="mb-16" id="main-courses">
-                    <h3 class="text-3xl font-bold text-[var(--logo-color)] mb-8" data-aos="fade-right">Main Courses</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="100">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqYDBOF4UhxmI1jLiJMTxequO9KdNGTg5N3Q&s"
-                                alt="Butter Chicken" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Classic Butter Chicken</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Tender chicken in a rich, creamy tomato sauce, a
-                                    house favorite.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$18.00</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Vegetable Biryani"
-                                class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Veg Biryani</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Fragrant basmati rice cooked with mixed vegetables
-                                    and aromatic spices.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$16.50</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="300">
-                            <img src="https://www.beyultreks.com/wp-content/uploads/2017/06/dal-bhat-Nepalese-food.jpg"
-                                alt="Nepalese Thali Set" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Nepalese Thali Set</h4>
-                                <p class="text-gray-600 mb-4 text-sm">A traditional platter with dal, seasonal
-                                    vegetables, pickle, and rice.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$15.00</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="400">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSADuJCa8RjmiNem_Gc1ZUbbQfAiNWrAs6w&s"
-                                alt="Mushroom Curry" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Creamy Mushroom Curry</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Fresh mushrooms simmered in a rich, velvety
-                                    coconut milk curry.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$14.00</span> -->
-                            </div>
-                        </article>
-                    </div>
-                </div>
+        <div class="mb-16" id="main-courses">
+          <h3 class="text-3xl font-bold text-[var(--logo-color)] mb-8" data-aos="fade-right">Main Courses</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqYDBOF4UhxmI1jLiJMTxequO9KdNGTg5N3Q&s"
+                alt="Butter Chicken" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Classic Butter Chicken</h4>
+                <p class="text-gray-600 mb-4 text-sm">Tender chicken in a rich, creamy tomato sauce, a
+                  house favorite.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$18.00</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="200">
+              <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Vegetable Biryani"
+                class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Veg Biryani</h4>
+                <p class="text-gray-600 mb-4 text-sm">Fragrant basmati rice cooked with mixed vegetables
+                  and aromatic spices.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$16.50</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="300">
+              <img src="https://www.beyultreks.com/wp-content/uploads/2017/06/dal-bhat-Nepalese-food.jpg"
+                alt="Nepalese Thali Set" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Nepalese Thali Set</h4>
+                <p class="text-gray-600 mb-4 text-sm">A traditional platter with dal, seasonal
+                  vegetables, pickle, and rice.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$15.00</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="400">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSADuJCa8RjmiNem_Gc1ZUbbQfAiNWrAs6w&s"
+                alt="Mushroom Curry" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Creamy Mushroom Curry</h4>
+                <p class="text-gray-600 mb-4 text-sm">Fresh mushrooms simmered in a rich, velvety
+                  coconut milk curry.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$14.00</span> -->
+              </div>
+            </article>
+          </div>
+        </div>
 
-                <div class="mb-16" id="desserts">
-                    <h3 class="text-3xl font-bold text-logo-color mb-8" data-aos="fade-right">Deserts</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="100">
-                            <img src="https://tse1.mm.bing.net/th/id/OIP.Zzl3MlSUwoMwgqo7UgfGqAHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3"
-                                alt="Gulab Jamun" class="w-full h-48 object-contain">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Gulab Jamun</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Deep-fried milk solids soaked in rose-flavored
-                                    sugar syrup.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$6.00</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://www.cakenknife.com/wp-content/uploads/2024/05/Sizzling-Brownie-Web_8462.jpg"
-                                alt="Chocolate Brownie" class="w-full h-48 object-contain">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Warm Chocolate Brownie</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Decadent chocolate brownie served with a scoop of
-                                    vanilla ice cream.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$9.00</span> -->
-                            </div>
-                        </article>
-                        
-                    </div>
-                    
-                </div>
+        <div class="mb-16" id="desserts">
+          <h3 class="text-3xl font-bold text-logo-color mb-8" data-aos="fade-right">Deserts</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="100">
+              <img src="https://tse1.mm.bing.net/th/id/OIP.Zzl3MlSUwoMwgqo7UgfGqAHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Gulab Jamun" class="w-full h-48 object-contain">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Gulab Jamun</h4>
+                <p class="text-gray-600 mb-4 text-sm">Deep-fried milk solids soaked in rose-flavored
+                  sugar syrup.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$6.00</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="200">
+              <img src="https://www.cakenknife.com/wp-content/uploads/2024/05/Sizzling-Brownie-Web_8462.jpg"
+                alt="Chocolate Brownie" class="w-full h-48 object-contain">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Warm Chocolate Brownie</h4>
+                <p class="text-gray-600 mb-4 text-sm">Decadent chocolate brownie served with a scoop of
+                  vanilla ice cream.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$9.00</span> -->
+              </div>
+            </article>
 
-                <div id="beverages">
-                    <h3 class="text-3xl font-bold text-logo-color mb-8" data-aos="fade-right">Beverages</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="100">
-                            <img src="https://jslight.com.np/wp-content/uploads/2022/06/Lime-Soda-167-850x568-1.jpg"
-                                alt="Fresh Lime Soda" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Fresh Lime Soda</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Refreshing lime juice with soda, sweet or salty.
-                                </p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$4.00</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEiMDSLRV3t_44b-lYB9naNxzIyJmYMTlMw&s" alt="Mango Lassi"
-                                class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Mango Lassi</h4>
-                                <p class="text-gray-600 mb-4 text-sm">A creamy blend of fresh yogurt and ripe mangoes.
-                                </p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$5.50</span> -->
-                            </div>
-                        </article>
-                        <article
-                            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-                            data-aos="fade-up" data-aos-delay="300">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNfuF7qFY0NKB1iFZGnohdvD6J4eklL7bvA&s" alt="Espresso Coffee"
-                                class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Espresso</h4>
-                                <p class="text-gray-600 mb-4 text-sm">Strong and aromatic coffee shot.</p>
-                                <!-- <span class="text-logo-color text-2xl font-bold">$3.00</span> -->
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+          </div>
 
-  
+        </div>
 
-    <!-- footer section -->
-    <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
+        <div id="beverages">
+          <h3 class="text-3xl font-bold text-logo-color mb-8" data-aos="fade-right">Beverages</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="100">
+              <img src="https://jslight.com.np/wp-content/uploads/2022/06/Lime-Soda-167-850x568-1.jpg"
+                alt="Fresh Lime Soda" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Fresh Lime Soda</h4>
+                <p class="text-gray-600 mb-4 text-sm">Refreshing lime juice with soda, sweet or salty.
+                </p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$4.00</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="200">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEiMDSLRV3t_44b-lYB9naNxzIyJmYMTlMw&s"
+                alt="Mango Lassi" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Mango Lassi</h4>
+                <p class="text-gray-600 mb-4 text-sm">A creamy blend of fresh yogurt and ripe mangoes.
+                </p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$5.50</span> -->
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              data-aos="fade-up" data-aos-delay="300">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNfuF7qFY0NKB1iFZGnohdvD6J4eklL7bvA&s"
+                alt="Espresso Coffee" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">Espresso</h4>
+                <p class="text-gray-600 mb-4 text-sm">Strong and aromatic coffee shot.</p>
+                <!-- <span class="text-logo-color text-2xl font-bold">$3.00</span> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- footer section -->
+  <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
     <div class="container mx-auto">
       <!-- Top Section of the Footer: Logo, Contact Info, Navigation Links -->
       <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8 mb-3">
 
-       
+
         <div class="flex flex-col items-center md:items-start md:w-1/4">
-          
+
           <div class=" p-4 rounded-lg shadow-lg mb-2 flex items-center justify-center">
-          
+
             <a href="zobra.html" title="Zorba Restaurant" aria-label="Zobra Restaurant logo" class="inline-block mb-3">
-              <img
-                src="img/logo.jpg"
-                alt="Zobra Restaurant Logo" class="h-30 w-65 rounded justify-center  shadow-md" />
+              <img src="img/logo.jpg" alt="Zobra Restaurant Logo" class="h-30 w-65 rounded justify-center  shadow-md" />
 
             </a>
           </div>
@@ -465,7 +475,7 @@
             </li>
             <li class="flex items-center gap-3">
               <i class="fas fa-file-alt text-xl"></i>
-             <a href="terms.html"><span>Term of stay</span></a> 
+              <a href="terms.html"><span>Term of stay</span></a>
             </li>
           </ul>
         </div>
@@ -548,46 +558,42 @@
         <p>2025 ZORBA RESTAURANT NEPAL.</p>
       </div>
     </div>
+
+
   </footer>
+  <div><a
+      href="https://wa.me/9779863841767?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Burja%20Ghar%27s%20Hotel%20Services."
+      class="whatsapp-float" target="_blank" rel="noreferrer noopener">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat Icon">
+    </a></div>
+
+  
+<!-- Back to Top Button -->
+<button id="backToTopBtn"
+  class="fixed bottom-6 right-6 z-50 p-3 bg-black text-white rounded-full shadow-lg hover:bg-gray-800 transition duration-300 hidden">
+  <!-- Up Arrow Icon (Heroicons or use your own) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<!-- navbar script start-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+<script src="assets/main.js"></script>
 
-    // Ensure both elements are found before adding the event listener
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function () {
-        // Toggle the classes responsible for showing/hiding the menu in CSS
-        mobileMenu.classList.toggle('mobile-menu-expanded');
-        mobileMenu.classList.toggle('mobile-menu-collapsed');
-      });
+<!-- navbar script start-->
+
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) { // Adjust this value as needed
+      navbar.classList.add('bg-gray-900', 'shadow-lg'); // Add your desired background and shadow classes
     } else {
-      console.error("Error: Mobile menu button or menu element not found. Check IDs in HTML.");
+      navbar.classList.remove('bg-gray-900', 'shadow-lg'); // Remove classes when scrolled to top
     }
   });
-</script>
-<!-- navbar script end -->
-<script>
-    AOS.init({
-        duration: 800, // animation duration in ms
-        easing: 'ease-out',
-        once: true,    // whether animation should happen only once - while scrolling down
-    });
-</script>
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) { // Adjust this value as needed
-            navbar.classList.add('bg-gray-900', 'shadow-lg'); // Add your desired background and shadow classes
-        } else {
-            navbar.classList.remove('bg-gray-900', 'shadow-lg'); // Remove classes when scrolled to top
-        }
-    });
 </script>
 
 </html>

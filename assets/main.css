@@ -1,8 +1,314 @@
-/* styles.css
-@tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
- /* image css section start */
 
-    
+
+/* image css section start */
+
+@media (max-width: 767px) {
+
+  .our-spaces-section .swiper-button-prev,
+  .our-spaces-section .swiper-button-next {
+    color: #f7d08a;
+    width: 30px;
+    height: 30px;
+    background-color:rgb(251 2 2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 1500px;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+    --swiper-navigation-size: 20px;
+  }
+
+  .our-spaces-section,
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+
+  .our-spaces-section .swiper-button-prev {
+    left: 10px;
+  }
+
+  .our-spaces-section .swiper-button-next {
+    right: 10px;
+  }
+
+  .our-spaces-section .swiper-button-prev.swiper-button-disabled,
+  .our-spaces-section .swiper-button-next.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+/* image css section end */
+
+/* testimonial css start */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 20px;
+  height: 20px;
+  /* background-color: rgba(249, 240, 240, 0.8); */
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+  color: #e32323;
+}
+
+.swiper-button-prev {
+  left: 4px;
+}
+
+.swiper-button-next {
+  right: -8px;
+}
+
+/* testimonial css end */
+
+/* stories css start */
+/* Custom styles for Swiper navigation buttons to match Facebook's look */
+.story-swiper .swiper-button-next,
+.story-swiper .swiper-button-prev {
+  /* background-color: white; */
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.story-swiper .swiper-button-next::after,
+.story-swiper .swiper-button-prev::after {
+  font-size: 16px;
+  /* Adjust arrow size */
+  font-weight: 500;
+  /* bold */
+  color: #cbc2c4;
+  /* text-gray-600 */
+}
+
+.swiper-button-prev {
+  left: 4px;
+}
+
+.swiper-button-next {
+  right: -8px;
+}
+
+/* stories css end */
+.animation-fadeup {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --logo-color: #ff0000;
+}
+
+/* navbar css */
+.mobile-menu-collapsed {
+  display: none !important;
+}
+
+.mobile-menu-expanded {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(233, 229, 229);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-collapsed,
+  .mobile-menu-expanded {
+    display: flex !important;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #mobile-menu-button {
+    display: none !important;
+  }
+}
+
+.mobile-menu-expanded ul li {
+  width: 100%;
+}
+
+.mobile-menu-expanded ul li a {
+  padding: 0.75rem 1.5rem;
+}
+
+/* WhatsApp floating button style */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+}
+
+
+/* about section  css start */
+
+
+/* Navbar styles */
+
+.mobile-menu-collapsed {
+  display: none !important;
+}
+
+.mobile-menu-expanded {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(233, 229, 229);
+  /* Ensures a black background for the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Optional: subtle shadow */
+  padding-bottom: 1rem;
+  /* Some padding at the bottom */
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-collapsed,
+  .mobile-menu-expanded {
+    display: flex !important;
+    /* Force display flex on desktop */
+    position: static;
+    /* Remove absolute positioning */
+    background-color: transparent;
+    /* Remove background color */
+    box-shadow: none;
+    /* Remove shadow */
+    padding: 0;
+    /* Remove padding */
+    flex-direction: row;
+    /* Set to row direction */
+    align-items: center;
+    /* Align items for horizontal menu */
+  }
+
+  /* Ensure the mobile hamburger button is hidden on desktop */
+  #mobile-menu-button {
+    display: none !important;
+  }
+}
+
+/* Styling for links within the expanded mobile menu */
+.mobile-menu-expanded ul li {
+  width: 100%;
+  /* Make list items take full width */
+  text-align: center;
+  /* Center the text for better appearance */
+}
+
+.mobile-menu-expanded ul li a {
+  padding: 0.75rem 1.5rem;
+  /* Adjust padding for mobile links */
+}
+
+/* Root CSS variables */
+:root {
+  --logo-color: #ff0000;
+}
+
+
+/* menu css */
+
+
+.mobile-menu-collapsed {
+  display: none !important;
+}
+
+.mobile-menu-expanded {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(233, 229, 229);
+  /* Ensures a black background for the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Optional: subtle shadow */
+  padding-bottom: 1rem;
+  /* Some padding at the bottom */
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-collapsed,
+  .mobile-menu-expanded {
+    display: flex !important;
+    /* Force display flex on desktop */
+    position: static;
+    /* Remove absolute positioning */
+    background-color: transparent;
+    /* Remove background color */
+    box-shadow: none;
+    /* Remove shadow */
+    padding: 0;
+    /* Remove padding */
+    flex-direction: row;
+    /* Set to row direction */
+    align-items: center;
+    /* Align items for horizontal menu */
+  }
+
+  /* Ensure the mobile hamburger button is hidden on desktop */
+  #mobile-menu-button {
+    display: none !important;
+  }
+}
+
+/* Styling for links within expanded mobile menu */
+.mobile-menu-expanded ul li {
+  width: 100%;
+  /* Make list items take full width */
+  text-align: center;
+  /* Center the text for better appearance */
+}
+
+.mobile-menu-expanded ul li a {
+  padding: 0.75rem 1.5rem;
+  /* Adjust padding for mobile links */
+}
+

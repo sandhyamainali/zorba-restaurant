@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Zorba Restaurant</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
-    <link href="assets/main.css" rel="stylesheet">
-<script src="assets/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Zorba Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+  <link href="assets/main.css" rel="stylesheet">
+  <script src="assets/main.js"></script>
 
-<meta name="description" content="Zorba the Buddha Restaurant offers vegetarian and vegan meals in the serene Nagarjun Hills, with meditation, bird watching, and peaceful nature views.">
-  <meta name="keywords" content="Zorba the Buddha, vegetarian restaurant Kathmandu, Nagarjun Hills, Osho Tapoban, vegan food Nepal, meditation restaurant, peaceful dining">
+  <meta name="description"
+    content="Zorba the Buddha Restaurant offers vegetarian and vegan meals in the serene Nagarjun Hills, with meditation, bird watching, and peaceful nature views.">
+  <meta name="keywords"
+    content="Zorba the Buddha, vegetarian restaurant Kathmandu, Nagarjun Hills, Osho Tapoban, vegan food Nepal, meditation restaurant, peaceful dining">
   <meta name="robots" content="index, follow">
-  
+
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="zorba restaurant">
   <meta property="og:title" content="Zorba the Buddha Restaurant">
-  <meta property="og:description" content="Vegetarian paradise in Nagarjun Hills offering peace, meditation, and mouth-watering vegetarian food.">
-  <meta property="og:image" content="img/logo.png"> <!-- Replace with actual image URL -->
+  <meta property="og:description"
+    content="Vegetarian paradise in Nagarjun Hills offering peace, meditation, and mouth-watering vegetarian food.">
+  <meta property="og:image"
+    content="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2Zbrx8Brk8IQ7kNvwFKqsCe&_nc_oc=Adl0YZXEc5wWClUiacFUWT7H2vwwM-21VY1E40l02sv0g5OxIs5dESqPBlFAZ83NgGU&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=inWoqKeSbY3ZGZtxIFI2yQ&oh=00_AfSp1_qDrxQh_AnG8LXuqDNusXyvt8qUnd6_AS4Ob3DWXg&oe=6875214B">
+  <!-- Replace with actual image URL -->
   <meta property="og:url" content="https://zorbarestaurant.com">
 
   <!-- Twitter -->
@@ -30,14 +36,14 @@
   <meta name="twitter:description" content="Vegetarian and vegan meals with a view, nestled in Nagarjun Hills. A perfect retreat for peace lovers.">
   <meta name="twitter:image" content="https://yourwebsite.com/images/zorba-preview.jpg"> -->
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Zorba the Buddha Restaurant",
-  "image": "https://zorbarestro.com/images/zorba-preview.jpg",
-  "@id": "https://zorbarestro.com",
-  "url": "https://zorbarestro.com",
+  "image": "https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-1/358699142_733093265488643_7372663690739957633_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2Zbrx8Brk8IQ7kNvwFKqsCe&_nc_oc=Adl0YZXEc5wWClUiacFUWT7H2vwwM-21VY1E40l02sv0g5OxIs5dESqPBlFAZ83NgGU&_nc_zt=24&_nc_ht=scontent.fktm19-1.fna&_nc_gid=inWoqKeSbY3ZGZtxIFI2yQ&oh=00_AfSp1_qDrxQh_AnG8LXuqDNusXyvt8qUnd6_AS4Ob3DWXg&oe=6875214B",
+  "@id": "https://zorba-restaurant.vercel.app/",
+  "url": "https://zorba-restaurant.vercel.app/",
   "telephone": "+977-1234567890",
   "priceRange": "$",
   "servesCuisine": ["Vegetarian", "Vegan", "Nepali"],
@@ -78,92 +84,15 @@
 }
 </script>
 
-    <style>
-        /* navbar css */
-
-
-    
-
-   
-    .mobile-menu-collapsed {
-      display: none !important;
-      
-    }
-
-
-    .mobile-menu-expanded {
-      display: flex !important;
-     
-      flex-direction: column;
-     
-      position: absolute;
-     
-      top: 100%;
-     
-      left: 0;
-      width: 100%;
-      background-color: rgb(233, 229, 229);
-     
-      /* Ensures a black background for the dropdown */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      /* Optional: subtle shadow */
-      padding-bottom: 1rem;
-      /* Some padding at the bottom */
-    }
-
-   
-    @media (min-width: 768px) {
-
-      .mobile-menu-collapsed,
-      .mobile-menu-expanded {
-        display: flex !important;
-        /* Force display flex on desktop */
-        position: static;
-        /* Remove absolute positioning */
-        background-color: transparent;
-        /* Remove background color */
-        box-shadow: none;
-        /* Remove shadow */
-        padding: 0;
-        /* Remove padding */
-        flex-direction: row;
-        /* Set to row direction */
-        align-items: center;
-        /* Align items for horizontal menu */
-      }
-
-      /* Ensure the mobile hamburger button is hidden on desktop */
-      #mobile-menu-button {
-        display: none !important;
-      }
-    }
-
-    /* Styling for links within the expanded mobile menu */
-    .mobile-menu-expanded ul li {
-      width: 100%;
-      /* Make list items take full width */
-      text-align: center;
-      /* Center the text for better appearance */
-    }
-
-    .mobile-menu-expanded ul li a {
-      padding: 0.75rem 1.5rem;
-      /* Adjust padding for mobile links */
-    }
-
-    
-        :root {
-            --logo-color: #ff0000;
-        }
-    </style>
+ 
 </head>
 
 <body class="font-inter text-gray-800 bg-gray-50">
 
-    <header class="fixed top-0 left-0 w-full z-50 text-xl bg-black" id="navbar">
+  <header class="fixed top-0 left-0 w-full z-50 text-xl bg-black" id="navbar">
     <!-- THIS IS THE LINE THAT WAS CHANGED (justify-center -> justify-between) -->
     <nav aria-label="Primary navigation" class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-20">
-      
+
       <!-- Item 1: Logo -->
       <a href="index.html" tabindex="0" aria-label="Zobra Restaurant Home" class="flex items-center">
         <img src="img/logo.jpg" alt="Zobra Restaurant Logo" class="h-20 w-20 rounded-lg shadow-lg" />
@@ -187,7 +116,7 @@
             </a>
           </li>
           <li>
-            <a href="about.html"  rel="noopener noreferrer" tabindex="0"
+            <a href="about.html" rel="noopener noreferrer" tabindex="0"
               class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
               About
             </a>
@@ -205,6 +134,12 @@
             </a>
           </li>
           <li>
+            <a href="gallery.html" tabindex="0"
+              class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
+              Gallery
+            </a>
+          </li>
+          <li>
             <a href="contact.html" tabindex="0"
               class="block py-2 px-4 text-gray-200 hover:text-[var(--logo-color)] focus:text-[var(--logo-color)] focus:outline-none transition-colors">
               Contact
@@ -213,224 +148,196 @@
         </ul>
       </div>
     </nav>
-</header>
+  </header>
 
-    <main class="pt-24">
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center" aria-label="Our Services">
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-sm font-semibold uppercase tracking-wider text-logo-color mb-2">Our Services</h3>
-                <p class="text-3xl font-bold text-gray-900 mb-8">At Zorba Buddhist Restaurant we provide Resort,
-                    Restaurant and Recreation packages.</p>
+  <main class="pt-24">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center" aria-label="Our Services">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-logo-color mb-2">Our Services</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-8">At Zorba Buddhist Restaurant we provide Resort,
+          Restaurant and Recreation packages.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12" role="list">
+        <article
+          class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
+          role="listitem" tabindex="0">
+          <div class="text-5xl mb-4" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="30" height="30" fill="currentColor">
+              <path
+                d="M21 2V22H19V15H15V8C15 4.68629 17.6863 2 21 2ZM19 4.53C18.17 5 17 6.17 17 8V13H19V4.53ZM9 13.9V22H7V13.9C4.71776 13.4367 3 11.419 3 9V3H5V10H7V3H9V10H11V3H13V9C13 11.419 11.2822 13.4367 9 13.9Z">
+              </path>
+            </svg></div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-2">Restaurant</h4>
+          <p class="text-gray-600 text-center text-sm">Experience the freshest local ingredients and
+            breathtaking views of valley with every bite</p>
+        </article>
+        <article
+          class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
+          role="listitem" tabindex="0">
+          <div class="text-5xl mb-4" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              fill="rgba(240,187,64,1)">
+              <path
+                d="M22 21H2V19H3V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V9H21V19H22V21ZM17 19H19V11H13V19H15V13H17V19ZM17 9V5H5V19H11V9H17ZM7 11H9V13H7V11ZM7 15H9V17H7V15ZM7 7H9V9H7V7Z">
+              </path>
+            </svg>
+          </div>
+          <a href="https://burjaghar.com/">
+            <h4 class="text-xl font-semibold text-gray-900 mb-2">Hotel</h4>
+            <p class="text-gray-600 text-center text-sm">Escape to the lush forests and views of towering
+              mountains of Nepal with luxurious accommodations.</p>
+          </a>
+        </article>
+        <article
+          class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
+          role="listitem" tabindex="0">
+          <div class="text-5xl mb-4" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="30" height="30" fill="rgba(150,218,183,1)">
+              <path
+                d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM11 13V17H6V13H11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z">
+              </path>
+            </svg></div>
+          <a href="https://tapoban.com/">
+            <h4 class="text-xl font-semibold text-gray-900 mb-2">Recreation</h4>
+
+            <p class="text-gray-600 text-center text-sm">Osho Tapoban is a collective dream of many evolved souls and
+              enlightened masters</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="text-gray-500 text-sm mb-2 flex items-center justify-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              fill="rgba(240,187,64,1)">
+              <path
+                d="M22 21H2V19H3V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V9H21V19H22V21ZM17 19H19V11H13V19H15V13H17V19ZM17 9V5H5V19H11V9H17ZM7 11H9V13H7V11ZM7 15H9V17H7V15ZM7 7H9V9H7V7Z">
+              </path>
+            </svg></span>
+            <span>Hotel</span>
+            <span class="text-xl"></span>
+          </p>
+          
+          <a href="https://burjaghar.com/"><h2 class="text-4xl font-bold text-gray-800 mb-4">Burja Ghar</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Burja Ghar is a peaceful eco-hotel in Nagarjun Forest, offering a serene escape just minutes from Kathmandu.
+          </p>
+          </a>
+        </div>
+
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+  <!-- First Box -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="https://burjaghar.com/storage/rooms/whatsapp-image-2025-05-05-at-160657-770x460.jpeg"
+      alt="Suite Room" class="w-full h-48 object-cover rounded-t-lg">
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Suite Room</h3>
+      <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+        <li>Air conditioner</li>
+        <li>High speed WiFi</li>
+        <li>Rooftop Restaurant</li>
+        <li>24/7 Online Support</li>
+        <li>Television</li>
+      </ul>
+    </div>
+    <div class="flex justify-center pb-4">
+      <a href="https://burjaghar.com/contact"><button class="bg-black text-white font-bold px-4 py-2 rounded">Book Now</button></a>
+    </div>
+  </div>
+
+  <!-- Second Box -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="https://burjaghar.com/storage/rooms/whatsapp-image-2025-05-05-at-161153-770x460.jpeg"
+      alt="Deluxe Room" class="w-full h-48 object-cover rounded-t-lg">
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Deluxe Room</h3>
+      <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+        <li>Modern en-suite bathroom with rain shower</li>
+        <li>43” LED TV with international channels</li>
+        <li>Daily housekeeping and 24-hour room service</li>
+        <li>Air conditioner</li>
+      </ul>
+    </div>
+    <div class="flex justify-center pb-4">
+      <a href="https://burjaghar.com/contact"><button class="bg-black text-white font-bold px-4 py-2 rounded">Book Now</button></a>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+  <!-- service section start -->
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-col items-center lg:items-start gap-8">
+        <div class="z-10 w-full">
+          <div class="text-center mb-12">
+            <p class="text-gray-500 text-sm mb-2 flex items-center justify-center space-x-2">
+
+              <span class="font-bold">OTHER SERVICES</span>
+
+            </p>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Explore More Activities</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Zorba Restaurant is a unique and special place, offering guests the opportunity to
+              experience the beauty and serenity of nature while enjoying luxurious accommodations. Our
+              resort is the perfect getaway for those looking to escape the hustle and bustle of daily
+              life.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
+              <img src="img/outdoorspace.jpg" alt="peace area" class="h-24 w-auto object-contain mb-3">
+              <h3 class="text-lg font-semibold">Peace Area</h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12" role="list">
-                <article
-                    class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
-                    role="listitem" tabindex="0">
-                    <div class="text-5xl mb-4" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                            <path
-                                d="M21 2V22H19V15H15V8C15 4.68629 17.6863 2 21 2ZM19 4.53C18.17 5 17 6.17 17 8V13H19V4.53ZM9 13.9V22H7V13.9C4.71776 13.4367 3 11.419 3 9V3H5V10H7V3H9V10H11V3H13V9C13 11.419 11.2822 13.4367 9 13.9Z">
-                            </path>
-                        </svg></div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Restaurant</h4>
-                    <p class="text-gray-600 text-center text-sm">Experience the freshest local ingredients and
-                        breathtaking views of valley with every bite</p>
-                </article>
-                <article
-                    class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
-                    role="listitem" tabindex="0">
-                    <div class="text-5xl mb-4" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" width="30" height="30" fill="rgba(240,187,64,1)">
-                            <path
-                                d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z">
-                            </path>
-                        </svg></div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Resort</h4>
-                    <p class="text-gray-600 text-center text-sm">Escape to the lush forests and views of towering
-                        mountains of Nepal with luxurious accommodations.</p>
-                </article>
-                <article
-                    class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105"
-                    role="listitem" tabindex="0">
-                    <div class="text-5xl mb-4" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" width="30" height="30" fill="rgba(150,218,183,1)">
-                            <path
-                                d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM11 13V17H6V13H11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z">
-                            </path>
-                        </svg></div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Recreation</h4>
-                    <p class="text-gray-600 text-center text-sm">Experience the ultimate retreat at Zorba Restaurant
-                        with events, day programs and events</p>
-                </article>
+
+            <div
+              class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
+              <img src="img/silencearea.jpg" alt="Silence environment" class="h-24 w-auto object-contain mb-3">
+              <h3 class="text-lg font-semibold">Silence Envirenment</h3>
             </div>
-        </section>
 
-
-
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <p class="text-gray-500 text-sm mb-2 flex items-center justify-center space-x-2">
-                        <span class="text-xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
-                                height="30" fill="rgba(240,187,64,1)">
-                                <path
-                                    d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z">
-                                </path>
-                            </svg></span>
-                        <span>RESORT</span>
-                        <span class="text-xl"></span>
-                    </p>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Rooms & Glamping Villas</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">
-                        We offer four different types of accommodation option: Standard, Deluxe, Super Deluxe and
-                        Glamping Villas.
-                    </p>
-                </div>
-
-                <div id="room-slider" class="splide" aria-label="Our Room and Glamping Villa options">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div
-                                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-2">
-                                    <img src="https://www.shutterstock.com/image-photo/cheap-hotel-room-double-bed-600nw-2595537199.jpg"
-                                        alt="Standard Room" class="w-full h-48 object-cover rounded-t-lg">
-                                    <div class="p-6">
-                                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Standard Room</h3>
-                                        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
-                                            <li>180 Sq.ft Size Room with a 32" TV.</li>
-                                            <li>Attached Bathroom</li>
-                                            <li>Along with a Queen Sized Bed and a Heater</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div
-                                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-2">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyb9HJ43yBZcjD-bJGDcQkO1ZB1QDkhvTrQ&s"
-                                        alt="Deluxe Room" class="w-full h-48 object-cover rounded-t-lg">
-                                    <div class="p-6">
-                                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Deluxe Room</h3>
-                                        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
-                                            <li>Private Balcony, Queen Size and Single Bed.</li>
-                                            <li>Extra Couch for a couple, 43" TV, Air Conditioning.</li>
-                                            <li>210 Sq.ft room, Attached Bathrooms</li>
-                                        </ul>
-                                    </div>
-                            </li>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div
-                                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-2">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyWevcR948umFgv_2xlHL2kyZ5j-d25-sig&s"
-                                        alt="Super Deluxe Room" class="w-full h-48 object-cover rounded-t-lg">
-                                    <div class="p-6">
-                                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Super Deluxe Room</h3>
-                                        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
-                                            <li>Well furnished spacious, comfortable rooms with all modern facilities.
-                                            </li>
-                                            <li>Panoramic view of himalayan peaks from window and balcony.</li>
-                                            <li>Extra comfy chair for a couple, 43" TV, Air Conditioning.</li>
-                                            <li>Private Balcony, Single Queen Size Bed</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div
-                                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-2">
-                                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/8c/d7/best-place-to-eat-with.jpg?w=1800&h=1000&s=1"
-                                        alt="Glamping Villas" class="w-full h-48 object-cover rounded-t-lg">
-                                    <div class="p-6">
-                                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Glamping Villas</h3>
-                                        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
-                                            <li>400 sq.ft space, Large luxurious rooms, amazing views.</li>
-                                            <li>Extra couch for a couple, 43" TV, Air Conditioning.</li>
-                                            <li>Private balcony with outdoor hot tub.</li>
-                                            <li>Separate courtyard for BBQ, Yoga and Meditation</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div
+              class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
+              <img src="img/parking.jpg" alt="parking area" class="h-24 w-auto object-contain mb-3">
+              <h3 class="text-lg font-semibold">Parking Area</h3>
             </div>
-        </section>
 
-        -
-
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto flex flex-col items-center lg:items-start gap-8">
-                <div class="z-10 w-full">
-                    <div class="text-center mb-12">
-                        <p class="text-gray-500 text-sm mb-2 flex items-center justify-center space-x-2">
-                           
-                            <span class="font-bold">OTHER SERVICES</span>
-                           
-                        </p>
-                        <h2 class="text-4xl font-bold text-gray-800 mb-4">Explore More Activities</h2>
-                        <p class="text-gray-600 max-w-2xl mx-auto">
-                            Zorba Restaurant is a unique and special place, offering guests the opportunity to
-                            experience the beauty and serenity of nature while enjoying luxurious accommodations. Our
-                            resort is the perfect getaway for those looking to escape the hustle and bustle of daily
-                            life.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div
-                            class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
-                            <img src="https://cdn.shopify.com/s/files/1/0717/8259/6885/files/Untitled-1_600x600.png?v=1692950724"
-                                alt="Campfire & BBQ icon" class="h-24 w-auto object-contain mb-3">
-                            <h3 class="text-lg font-semibold">Campfire & BBQ</h3>
-                        </div>
-
-                        <div
-                            class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gTrEHdkeaoUnDSeoEfs_CsiqRMQX7qfv5A&s"
-                                alt="Swimming Pool icon" class="h-24 w-auto object-contain mb-3">
-                            <h3 class="text-lg font-semibold">Swimming Pool</h3>
-                        </div>
-
-                        <div
-                            class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
-                            <h3 class="text-lg font-semibold">Glamping</h3>
-                        </div>
-
-                        <div
-                            class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
-                            <h3 class="text-lg font-semibold">Event & Parties</h3>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="bg-gray-700 text-white rounded-lg p-6 flex flex-col items-center justify-center text-center h-48 transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
+              <img src="img/event.jpg" alt="event" class="h-24 w-auto object-contain mb-3">
+              <h3 class="text-lg font-semibold">Events</h3>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-  
 
-    <!-- Footer -->
-    <!-- footer section -->
-    <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
+
+  <!-- Footer -->
+  <!-- footer section -->
+  <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16 flex flex-col">
     <div class="container mx-auto">
       <!-- Top Section of the Footer: Logo, Contact Info, Navigation Links -->
       <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8 mb-3">
 
-       
+
         <div class="flex flex-col items-center md:items-start md:w-1/4">
-          
+
           <div class=" p-4 rounded-lg shadow-lg mb-2 flex items-center justify-center">
-          
+
             <a href="index.html" title="Zorba Restaurant" aria-label="Zobra Restaurant logo" class="inline-block mb-3">
-              <img
-                src="img/logo.jpg"
-                alt="Zobra Restaurant Logo" class="h-30 w-65 rounded justify-center  shadow-md" />
+              <img src="img/logo.jpg" alt="Zobra Restaurant Logo" class="h-30 w-65 rounded justify-center  shadow-md" />
 
             </a>
           </div>
@@ -466,7 +373,7 @@
             </li>
             <li class="flex items-center gap-3">
               <i class="fas fa-file-alt text-xl"></i>
-             <a href="terms.html"><span>Term of stay</span></a> 
+              <a href="terms.html"><span>Term of stay</span></a>
             </li>
           </ul>
         </div>
@@ -549,57 +456,28 @@
         <p>2025 ZORBA RESTAURANT NEPAL.</p>
       </div>
     </div>
+
+    <button id="backToTopBtn"
+    class="fixed bottom-9 left-20 z-50 p-3 bg-black text-white rounded-full shadow-lg hover:bg-gray-800 transition duration-300 hidden">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!-- navbar script start-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
 
-    // Ensure both elements are found before adding the event listener
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function () {
-        // Toggle the classes responsible for showing/hiding the menu in CSS
-        mobileMenu.classList.toggle('mobile-menu-expanded');
-        mobileMenu.classList.toggle('mobile-menu-collapsed');
-      });
-    } else {
-      console.error("Error: Mobile menu button or menu element not found. Check IDs in HTML.");
-    }
-  });
-</script>
-<!-- navbar script end -->
-    <script>
-        AOS.init({
-            duration: 800, // animation duration in ms
-            easing: 'ease-out',
-            once: true,    // whether animation should happen only once - while scrolling down
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-
-            new Splide('#room-slider', {
-                type: 'loop',
-                perPage: 3,
-                gap: '1.5rem',
-                autoplay: true,
-                interval: 3000,
-                pauseOnHover: true,
-                breakpoints: {
-                    1024: {
-                        perPage: 2,
-                    },
-                    768: {
-                        perPage: 1,
-                        gap: '1rem',
-                    },
-                },
-            }).mount();
-        });
-    </script>
+  <div><a
+      href="https://wa.me/9779863841767?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Burja%20Ghar%27s%20Hotel%20Services."
+      class="whatsapp-float" target="_blank" rel="noreferrer noopener">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat Icon">
+    </a></div>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script src="assets/main.js"></script>
+ 
 </body>
 
 </html>
